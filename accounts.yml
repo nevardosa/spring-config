@@ -1,0 +1,41 @@
+server:
+  port: 8086
+spring:
+  datasource:
+    url: jdbc:h2:mem:accountdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+config:
+  import:
+    - "accounts-qa.yml"
+    - "accounts-prod.yml"
+profiles:
+  active:
+    - "prod"
+
+springdoc:
+  api-docs:
+    path: "/api-docs"
+    enabled: true
+
+build:
+  version: "v3.0"
+
+  #@ConfigurationProperties
+contact:
+  messge: "Bank System - Accounts API"
+  details:
+    name: "Max Alberto Cuao - Developer"
+    email: "malbertocuao@gmail.com"
+  phone-numbers:
+    - "(57) 305-745-9906"
+    - "(57) 305-261-0117"
