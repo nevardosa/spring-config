@@ -1,0 +1,12 @@
+build:
+  version: "v1.0"
+
+# @ConfigurationProperties
+contact:
+  message: "Bank System - Loans API"
+  details:
+    name: "Sara Ximena Sanchez - Senior developer"
+    email: "sara.xi@gmail.com"
+  phone-numbers:
+    - "(57) 305-745-9906"
+    - "(57) 305-261-0117"

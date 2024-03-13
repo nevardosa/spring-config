@@ -1,0 +1,41 @@
+server:
+  port: 8092
+spring:
+  datasource:
+    url: jdbc:h2:mem:accountdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+config:
+  import:
+    - "loans-qa.yml"
+    - "loans-prod.yml"
+profiles:
+  active:
+    - "default"
+
+springdoc:
+  api-docs:
+    path: "/api-docs"
+    enabled: true
+
+build:
+  version: "v3.0"
+
+  #@ConfigurationProperties
+contact:
+  messge: "Bank System - Loans API"
+  details:
+    name: "Liliana Castro - Developer"
+    email: "lili-cast@gmail.com"
+  phone-numbers:
+    - "(57) 350 963 45 98"
+    - "(57) 320 789 14 65"
