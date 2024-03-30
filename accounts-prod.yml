@@ -3,7 +3,7 @@ build:
 
 # @ConfigurationProperties
 contact:
-  message: "Bank System - Accounts API"
+  message: "Sistema bancario - API DEL SISTEMA "
   details:
     name: "Mario Moreno - Product Owner"
     email: "mario.moreno@gmail.com"
