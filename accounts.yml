@@ -32,10 +32,10 @@ build:
 
   #@ConfigurationProperties
 contact:
-  messge: "Bank System - Accounts API"
+  messge: "Sistema bancario - Accounts API"
   details:
-    name: "Max Alberto Cuao - Developer"
-    email: "malbertocuao@gmail.com"
+    name: "Danilo Sanchez - Developer"
+    email: "daniloo@gmail.com"
   phone-numbers:
     - "(57) 305-745-9906"
     - "(57) 305-261-0117"
